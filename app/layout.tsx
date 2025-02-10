@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import 'react-loading-skeleton/dist/skeleton.css';
 import '../styles/main.scss';
-import Header from './components/shared/Header/Header';
 import Footer from './components/shared/Footer/Footer';
+import Header from './components/shared/Header/Header';
 import Providers from './providers';
 
 const geistSans = Geist({
