@@ -1,0 +1,35 @@
+@use '../base' as *;
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid $black;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  transition-property: color, background-color;
+
+  &:disabled {
+    pointer-events: none;
+  }
+}
+
+.btn--main {
+  background-color: $black;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.btn--secondary {
+  background-color: $white;
+  color: $black;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
