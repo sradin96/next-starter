@@ -1,10 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import 'react-loading-skeleton/dist/skeleton.css';
-import '../styles/main.scss';
-import Footer from './components/shared/Footer/Footer';
-import Header from './components/shared/Header/Header';
-import Providers from './providers';
+import '../../../styles/main.scss';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -21,7 +18,7 @@ export const metadata: Metadata = {
   description: 'NextJS Starter description',
 };
 
-export default function RootLayout({
+export default function PortalLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -29,9 +26,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Header />
-        <Providers>{children}</Providers>
-        <Footer />
+        {children}
       </body>
     </html>
   );

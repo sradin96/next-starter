@@ -1,5 +1,5 @@
 'use client';
-import { useCounterStore } from '@/app/providers/counter-store-provider';
+import { useCounterStore } from '@/app/(main)/providers/counter-store-provider';
 import { useState } from 'react';
 import PageLoader from '../../ui/Loaders/PageLoader/PageLoader';
 
